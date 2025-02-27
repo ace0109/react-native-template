@@ -1,4 +1,13 @@
-const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
+const {getDefaultConfig} = require('@react-native/metro-config');
+
+/**
+ * 安装react-native-reanimated第三步，做出下面的修改
+ * https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started/
+ */
+const {
+  wrapWithReanimatedMetroConfig,
+} = require('react-native-reanimated/metro-config');
+
 
 /**
  * Metro configuration
@@ -6,6 +15,7 @@ const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
  *
  * @type {import('@react-native/metro-config').MetroConfig}
  */
-const config = {};
+const config = getDefaultConfig(__dirname);
 
-module.exports = mergeConfig(getDefaultConfig(__dirname), config);
+module.exports = wrapWithReanimatedMetroConfig(config);
+

@@ -7,11 +7,28 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "iconfont": "npx iconfont-rn"
   },
   "dependencies": {
+    "@react-navigation/bottom-tabs": "^7.2.0",
+    "@react-navigation/drawer": "^7.1.1",
+    "@react-navigation/elements": "^2.2.5",
+    "@react-navigation/native": "^7.0.14",
+    "@react-navigation/native-stack": "^7.2.0",
+    "immer": "^10.1.1",
+    "jotai": "^2.12.1",
+    "jotai-immer": "^0.4.1",
     "react": "19.0.0",
-    "react-native": "0.78.0"
+    "react-native": "0.78.0",
+    "react-native-gesture-handler": "^2.24.0",
+    "react-native-mmkv": "^3.2.0",
+    "react-native-reanimated": "^3.17.0",
+    "react-native-safe-area-context": "^5.2.0",
+    "react-native-screens": "4.9.1",
+    "react-native-size-matters": "^0.4.2",
+    "react-native-svg": "^15.11.2",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -27,9 +44,12 @@
     "@types/jest": "^29.5.13",
     "@types/react": "^19.0.0",
     "@types/react-test-renderer": "^19.0.0",
+    "babel-plugin-dotenv-import": "^3.0.1",
+    "babel-plugin-module-resolver": "^5.0.2",
     "eslint": "^8.19.0",
     "jest": "^29.6.3",
     "prettier": "2.8.8",
+    "react-native-iconfont-cli-2": "^2.2.7",
     "react-test-renderer": "19.0.0",
     "typescript": "5.0.4"
   },
